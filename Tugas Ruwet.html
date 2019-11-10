@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+ <!-- Awal head-->   
+ <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Tugas Ruwet</title>
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+         <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+         <link rel="stylesheet" href="css/Ionicons/css/ionicons.css">
+         <link rel="stylesheet" href="css/AdminLTE.min.css">
+         <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+     <script src="js/chart.js/Chart.min.js"></script>
+		<style>
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			#canvas-holder{
+				width:60%;
+			}
+		</style>
+  </head>
+ <!-- /.Akhir head-->
+<body class="hold-transition skin-red sidebar-mini">
+ <div class="wrapper">
+  <header class="main-header">
+   <a class="logo" style="background:#FF0066">
+    <span class="logo-mini"><b>E</b>RP</span>
+     <span class="logo-lg"><b>E-</b>Rapor <b>SMK</b></span>
+      </a>
+
+       <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="background:#330033">
+     <span class="sr-only">Toggle navigation</span>
+    </a>       
+   <a class="logo" style="background:#FF0033">
+   <span class="logo-mini"><b>S</b>MK</span>
+     <span class="logo-lg"><b>SMKN</b> 1 Mepanga</span>
+ </a>
+        
+<div class="navbar-custom-menu">
+ <ul class="nav navbar-nav">
+  <li class="dropdown messages-menu">
+   <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background:#FF0000">
+    <i class="fa fa-envelope-o"></i>
+     <span class="label label-success">4</span>
+      </a>
+       <ul class="dropdown-menu">
+        <li class="header">4 Percakapan</li>
+         <li>
+          <ul class="menu">
+           <li>
+            <a href="#">
+             <div class="pull-left">
+              <img src="img/03.jpg" class="img-circle" alt="User Image">
+               </div>
+                <h4>Team Youtube
+                 <small><i class="fa fa-clock-o"></i> 5 menit</small></h4>
+                  <p>Qahh... Keren Lee</p>
+                   </a>
+                    </li>
+                     <li>
+                      <a href="#">
+                        
+                     <div class="pull-left">
+                    <img src="img/02.jpg" class="img-circle" alt="User Image">
+                   </div>
+                  <h4>Ricko Jaka Cilas<small><i class="fa fa-clock-o"></i> 3 Menit</small></h4>
+                 <p>Wkwkw. Biasa saja...</p>
+                </a>
+               </li>
+              <li>
+             <a href="#">
+            <div class="pull-left">
+           <img src="img/03.jpg" class="img-circle" alt="User Image">
+          </div>
+         <h4>Team Youtube<small><i class="fa fa-clock-o"></i> 2 Menit</small></h4>
+        <p>Kapan kita bikin Film vro..,</p>
+       </a>
+      </li>
+     <li>
+    <a href="#">
+   <div class="pull-left">
+  <img src="img/02.jpg" class="img-circle" alt="User Image">
+ </div>
+<h4>Ricko Jaka Cilas<small><i class="fa fa-clock-o"></i> 1 Menit</small>
+ </h4>
+  <p>Kalau tdak ada halangan minggu2 ini lah,..</p>
+    </a>
+     </li>
+      </ul>
+       </li>
+        <li class="footer"><a href="#">SMK_Suzuran</a></li>
+         </ul>
+          </li>
+
+          <li class="dropdown notifications-menu">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background:#33FF00">
+        <i class="ion ion-ios-world" style="color:#CC0000"></i>
+       <span class="label label-warning">3</span>
+      </a>
+     <ul class="dropdown-menu">
+    <li class="header">Pemberitahuan Terkini</li>
+   <li>
+  <ul class="menu">
+ <li>
+<a href="#">
+ <i class="fa fa-warning text-yellow"></i> Keamanan Situs Anda Dalam Masalah Berat***
+  </a>
+   </li>
+    <li>
+     <a href="#">
+      <i class="ion ion-android-download"></i> 15 Data Selesai Di download
+       </a>
+        </li>
+         <li>
+          <a href="#">
+           <i class="ion ion-person"></i> 5 Permintaan Nikah!!!
+            </a>
+             </li>
+              </ul>
+               </li>
+                <li class="footer"><a href="#">Untuk Semua</a></li>
+                 </ul>
+                  </li>
+
+            <li class="dropdown user user-menu" style="background:#003399">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <img src="img/01.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Ricko Jaka Cilas</span>
+             </a>
+            <ul class="dropdown-menu" style="background:#FF0000">
+           <li class="user-header" style="background:#3300FF">
+          <img src="img/01.jpg" class="img-circle" alt="User Image">
+         <p>Ricko Jaka Cilas <small>SMK Negeri 1 Mepanga</small>
+        <small>Teknik Komputer Dan Jaringan</small>
+       </p>
+      </li>
+     <!-- Menu Body -->
+    <li class="user-body">
+   <div class="row">
+  <div class="col-xs-4 text-center">
+ <a href="#">Musuh</a>
+</div>
+ <div class="col-xs-4 text-center">
+  <a href="#">Pengikut</a>
+   </div>
+    <div class="col-xs-4 text-center">
+     <a href="#">Sahabat</a>
+      </div>
+       </div>
+        <!-- /.row -->
+         </li>
+          <!-- Menu Footer-->
+           <li class="user-footer">
+            <div class="pull-left">
+             <a href="#" class="btn btn-default btn-flat" style="background:#CC0000">
+                 <font style="color:#FFFFFF;">Profile</font></a>
+              </div>
+               <div class="pull-right">
+                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                 </div>
+                  </li>
+                   </ul>
+                    </li>
+                     </ul>
+                      </div>
+                       </nav>
+                        </header>
+
+                       <aside class="main-sidebar" style="background:#CC0000">
+                      <section class="sidebar">
+                          
+                     <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                   <font style="font-family:algerian; font-size:18px;">
+                  <input type="text" name="q" class="form-control" placeholder="Search Mantan..." style="background:#FFFFFF">
+                </font>
+                  <span class="input-group-btn">
+                 <button type="submit" name="search" id="search-btn" class="btn btn-flat" style="background:#CC0000"><i class="fa fa-search" style="background:#CC0000"></i>
+                </button>
+               </span>
+              </div>
+             </form>
+                          
+             <div id="left" style="background:#CC0000">    
+            <div class="media user-media hidden-phone">
+           <a href="" class="user-link">
+          <center><img src="img/01.jpg"alt="Gambar Rounded" class="img-Rounded" width="156" height="99">
+         <span class="label user-label">
+        <font style="font-family:algerian; font-size:18px; color:#0000FF;">Ricko Jaka Cilas</font></span></center>
+       </a>
+      <div class="media-body hidden-tablet">
+     <p class="media-heading pull-left info">
+    <font style="font-family:elephant; font-size:14px; color:#FFFF33;">Teknisi___Alay_____</font></p>
+   <a href="#"><i class="fa fa-circle text-success"></i> Online</a><div class="">
+  </div>
+ </div>
+      
+  <!-- sidebar menu: : style can be found in sidebar.less -->
+   <ul class="sidebar-menu" data-widget="tree">
+    <li class="header" style="background:#000033">Periode Aktif : 2017/2018 SMT 2</li>
+         
+      <li class="treeview">
+       <a href="#" style="background:#CC0000">
+        <i class="ion ion-ios-home" style="color:#000066"></i> <span>Beranda</span>
+         <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+           </span>
+            </a>
+             <ul class="treeview-menu">
+                 <li><a href="#" style="background:#33FF00">
+                  <i class="ion ion-android-send"></i>  
+                   <font style="color:#3300CC;">Beranda 1</font></a></li>
+                 <li><a href="#" style="background:#33FF00">
+                  <i class="ion ion-android-send">
+                   </i> <font style="color:#3300CC;">Beranda 2</font></a></li>
+                    </ul>
+                     </li>
+          
+       <li class="treeview">
+        <a href="#" style="background:#FFFFFF">
+         <i class="ion ion-android-settings" style="color:#000066"></i> 
+          <font style="color:#CC0000;"><span>Setting</span></font>
+           <span class="pull-right-container"></span>
+            </a>
+             </li>          
+       
+   <li class="active treeview">
+    <a href="#" style="background:#CC0000">
+     <i class="ion ion-loop" style="color:#000066"></i>
+      <span>Sinkronisasi</span>
+       <span class="pull-right-container">
+        </span>
+         </a>
+          </li>
+          
+        <li class="treeview">
+         <a href="#" style="background:#FFFFFF">
+          <i class="ion ion-ios-keypad" style="color:#000066"></i> 
+           <font style="color:#CC0000;">
+            <span>Nilai Rapor Dapodik</span></font>
+             <span class="pull-right-container"></span>
+              </a>
+               </li>          
+              
+            <li class="treeview">
+           <a href="#" style="background:#CC0000">
+          <i class="ion ion-wrench" style="color:#000066"></i>
+         <span>Konfigurasi</span>
+        <span class="pull-right-container">
+       <i class="fa fa-angle-left pull-right"></i>
+      </span>
+     </a>
+    <ul class="treeview-menu">
+     <li><a href="#" style="background:#33FF00">
+      <i class="ion ion-android-send"></i> 
+       <font style="color:#3300CC;">Konfigurasi 1</font></a></li>
+        <li><a href="#" style="background:#33FF00">
+         <i class="ion ion-android-send"></i>
+          <font style="color:#3300CC;">Konfigurasi 2</font></a></li>
+           <li><a href="#" style="background:#33FF00">
+            <i class="ion ion-android-send"></i> 
+             <font style="color:#3300CC;">Konfigurasi 3</font></a></li>
+              <li><a href="#" style="background:#33FF00">
+               <i class="ion ion-android-send"></i>
+                <font style="color:#3300CC;">Konfigurasi 4</font></a></li>
+                 </ul>
+                  </li>
+          
+          <li class="treeview">
+         <a href="#" style="background:#FFFFFF">
+        <i class="ion ion-ios-list" style="color:#000066"></i> 
+       <font style="color:#CC0000;"><span>Referensi</span></font>
+      <span class="pull-right-container">
+     <i class="fa fa-angle-left pull-right" style="color:#CC0000"></i>
+    </span>
+   </a>
+     <ul class="treeview-menu">
+       <li><a href="#" style="background:#33FF00">
+        <i class="ion ion-android-send"></i> 
+         <font style="color:#3300CC;">Referensi 1</font></a></li>
+          <li><a href="#" style="background:#33FF00">
+           <i class="ion ion-android-send"></i> 
+            <font style="color:#3300CC;">Referensi 2</font></a></li>
+             <li><a href="#" style="background:#33FF00">
+              <i class="ion ion-android-send"></i> 
+               <font style="color:#3300CC;">Referensi 3</font></a></li>
+                </ul>
+                 </li>
+
+    <li class="treeview">
+     <a href="#" style="background:#CC0000">
+      <i class="fa fa-user" style="color:#000066"></i> <span>Profil</span>
+       <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+         </span>
+          </a>
+       <ul class="treeview-menu">
+        <li><a href="#" style="background:#33FF00">
+         <i class="ion ion-android-send"></i> 
+          <font style="color:#3300CC;">Ricko Jaka Cilas</font></a></li>
+           
+        <li class="treeview">
+       <a href="#" style="background:#33FF00">
+      <i class="ion ion-android-send"></i> 
+     <font style="color:#3300CC;">SMK Negeri 1 Mepanga</font>
+    <span class="pull-right-container">
+   <i class="fa fa-angle-left pull-right"></i></span></a>
+ <ul class="treeview-menu">
+  <li><a href="#" style="background:#FF0000">
+   <i class="ion ion-android-send"></i> 
+    <font style="color:#3300CC;">Teknik Komputer Jaringan</font></a></li>
+     <li class="treeview">
+      <a href="#" style="background:#FF0000">
+       <i class="ion ion-android-send"></i> 
+        <font style="color:#3300CC;">TKJ</font>
+         <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i></span></a>
+         <ul class="treeview-menu">
+        <li><a href="#" style="background:#FF0066">
+       <i class="ion ion-android-send"></i> 
+      <font style="color:#3300CC;">Angkatan 06 TKJ</font></a></li>
+     <li class="treeview">
+    <a href="#" style="background:#FF0066">
+   <i class="ion ion-android-send"></i> 
+  <font style="color:#3300CC;">Teknisi</font>
+ <span class="pull-right-container">
+<i class="fa fa-angle-left pull-right"></i></span></a>
+ <ul class="treeview-menu">
+  <li><a href="#" style="background:#FFFF00">
+   <i class="ion ion-android-send"></i> 
+    <font style="color:#3300CC;">Teknisi 2017/2018</font></a></li>
+     <li><a href="#" style="background:#FFFF00">
+      <i class="ion ion-android-send"></i> 
+       <font style="color:#3300CC;">Generation Teknisi</font></a></li>
+        <li><a href="#" style="background:#FFFF00">
+         <i class="ion ion-android-send"></i> 
+          <font style="color:#3300CC;">Teknisi Alay</font></a></li>
+           <li><a href="#" style="background:#FFFF00">
+            <i class="ion ion-android-send"></i> 
+             <font style="color:#3300CC;">WEB Teknisi</font></a></li>
+             </ul>
+              </li>
+             <li><a href="#" style="background:#FF0066">
+            <i class="ion ion-android-send"></i> 
+           <font style="color:#3300CC;">Angkatan 07 SMK</font></a></li>
+          </ul>
+         </li>
+        </ul>
+       </li>                   
+        <li><a href="#" style="background:#33FF00">
+         <i class="ion ion-android-send"></i> 
+          <font style="color:#3300CC;">04-08-2002</font></a></li>
+           <li><a href="#" style="background:#33FF00">
+            <i class="ion ion-android-send"></i> 
+             <font style="color:#3300CC;">TKJ B</font></a></li>
+            </ul>
+           </li>
+          <li>
+              
+  <a href="#" style="background:#FFFFFF">
+   <i class="ion ion-android-checkbox-outline" style="color:#000066"></i> 
+    <font style="color:#CC0000;"><span>Daftar Perubahan</span></font>
+     <span class="pull-right-container"></span>
+      </a>
+       </li>
+          
+    <li class="active treeview">
+     <a href="#" style="background:#CC0000">
+      <i class="ion ion-android-sync" style="color:#000066"></i>
+       <span>Cek Pembaharuan</span>
+        <span class="pull-right-container">
+         </span>
+          </a>
+           </li>
+      
+   <li class="treeview">
+    <a href="#" style="background:#FFFFFF">
+     <i class="ion ion-briefcase" style="color:#000066"></i>
+      <font style="color:#CC0000;"><span>Peralatan</span></font>
+       <span class="pull-right-container">
+        </span>
+         </a>
+          </li>
+
+         <li class="treeview">
+        <a href="#" style="background:#CC0000">
+       <i class="fa fa-book" style="color:#000066"></i> 
+      <span>Documen Rahasia</span>
+     <span class="pull-right-container">
+    </span>
+   </a>
+  </li>
+          
+  <li class="treeview">
+ <a href="#" style="background:#FFFFFF">
+<i class="ion ion-power" style="color:#000066"></i>
+     <font style="color:#CC0000;"><span>Keluar Dari Aplikasi</span></font>
+  <span class="pull-right-container">
+   </span>
+    </a>
+     </li>
+      </ul>
+       </div>
+                          </div></section>
+        </aside>
+      
+<div class="content-wrapper">
+ <section class="content-header">
+  <h1><font style="font-family:elephant; font-size:20px; color:#CC0000;">BERANDA</font></h1>
+   </section>
+<div class="container-fluid">
+ <div class="jumbotron" style="background:#000000"> 
+     <center><marquee bgcolor="#000033"><h4><font style="font-family:elephant; font-size:20px; color:#FFFF00;"> Selamat Datang Admin "Ricko Jaka Cilas"</font></h4></marquee></center>
+   <section class="content">
+    <div class="row"> 
+        <div class="container-fluid" style="background:#000033">
+            
+        <div class="col-lg-4 col-lg-4">
+      <div class="small-box bg-green">
+       <div class="inner">
+        <h3>93</h3>
+         <p>Guru</p>
+          </div>
+           <div class="icon">
+            <i class="ion ion-person-add"></i>
+             </div>
+              <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i>  </a>
+                </div>
+                 </div>
+          
+                <div class="col-lg-4 col-lg-4">
+               <div class="small-box bg-yellow">
+              <div class="inner">
+             <h3>27</h3>
+            <p>Siswa</p>
+           </div>
+          <div class="icon">
+         <i class="ion ion-android-contacts"></i>
+        </div>
+       <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+     </div> 
+           <div class="pull-right">
+     <div id="canvas-holder">
+			<canvas id="chart-area" width="500" height="500"/>
+		</div>
+
+
+	<script>
+
+		var doughnutData = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "SMKN 1 Mepanga"
+				},
+				{
+					value: 150,
+					color: "#33FF00",
+					highlight: "#33FF00",
+					label: "Pertanian"
+				},
+				{
+					value: 60,
+					color: "#6699FF",
+					highlight: "#6699FF",
+					label: "Perikanan"
+				},
+				{
+					value: 200,
+					color: "#663399",
+					highlight: "#663399",
+					label: "Teknik Komputer & Jaringan"
+				},
+				{
+					value: 120,
+					color: "#FFFF00",
+					highlight: "#FFFF00",
+					label: "Akuntasi"
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+			};
+
+
+
+	</script>
+     
+     </div>
+   
+    <div class="col-lg-4 col-lg-4">
+     <div class="small-box bg-red">
+      <div class="inner">
+       <h3>0</h3>
+        <p>Rencana Penilaian &#40;P&amp;K&#41;</p>
+         </div>
+          <div class="icon">
+           <i class="ion ion-android-checkbox-outline"></i>
+            </div>
+             <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i>  </a>
+               </div>
+                </div>
+        
+               <div class="col-lg-4 col-lg-4">
+              <div class="small-box bg-blue">
+             <div class="inner">
+            <h3>0</h3>
+           <p>Penilaian Per KD &#40;P&amp;K&#41;</p>
+          </div>
+         <div class="icon">
+        <i class="ion ion-arrow-graph-up-right"></i>
+       </div>
+      <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
+     </div>
+    </div>
+   </div>
+       </div>
+  </section>
+     
+   
+           
+<div class="container">
+ <div class="jumbotron" style="background:#000033"> 
+  <font face="algerian">
+     <font style="font-family:bombing; font-size:20px; color:#FFFF00;"><u><p>Lembayung Senja<p></u></font>
+   <center><h2 style="background:#FFFFFF">"Di dalam pembuatan <i>WEB</i> Apabila kamu berhasil, maka teman temanmu bakal mengenal siapa kamu. Tetapi, apabila kamu gagal, maka kamu bakal mengenal siapa teman teman kamu yang sesungguhnya."</h2> </center>
+       <font style="font-family:ravie; font-size:20px; color:#FFFF00;"><u><p>Lembayung Senja<p></u></font>
+      <center><h3 style="background:#FFFFFF">"Kegagalan paling besar dalam pembuatan *WEB* Ketika kamu takut untuk merasakan kegagalan."</h3></center>
+    <font color="blue">
+     <center><p>Ricko Jaka Cilas</p></center>
+      </font>
+   
+  
+                   </font>           
+                     </div>
+                      </div> 
+                       </div>
+                        </div>
+                         </div>
+                      <footer class="main-footer" style="background:#CC0000">
+                     <div class="pull-right hidden-xs">
+                    <span style="color:#CCFF00"><b>Version</b> 22.11.16</span>
+                   </div>
+                  <strong><span style="color:#FFFFFF">Ricko_Jaka_Cilas &copy;2017-2018 </span><a href="https://adminlte.io">SMK_Negeri_1_Mepanga</a>.</strong>
+                 </footer>
+                <div class="control-sidebar-bg"></div>
+               </div>
+    
+    <!-- Awal --> 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/adminlte.min.js"></script>
+     <!-- /Akhir -->
+
+  </body>
+</html>
